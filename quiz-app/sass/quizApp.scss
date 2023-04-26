@@ -133,7 +133,6 @@ body {
 }
 
 .quiz-header {
-  border: 1px solid red;
   position: relative;
 
   .quiz-header-banner {
@@ -145,7 +144,6 @@ body {
       object-fit: cover;
     }
   }
-  // background-position: center;
 
   .timeCount {
     position: absolute;
@@ -155,7 +153,6 @@ body {
 
     top: 0;
     right: 0;
-    // border: 1px solid red;
 
     .timeLeft {
       color: yellow;
