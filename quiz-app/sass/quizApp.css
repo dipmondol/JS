@@ -1,0 +1,220 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  height: 80rem;
+  width: 60rem;
+  max-height: 70vh;
+  margin-top: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+.quiz-container .quiz-home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container .quiz-home-banner img {
+  height: 30rem;
+  width: 30rem;
+}
+.quiz-container .quiz-index-elements {
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quiz-container .quiz-index-elements .icons {
+  height: 15rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container .quiz-index-elements .icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.quiz-container .quiz-index-elements .icons div a {
+  font-size: 1.8rem;
+  color: #292929;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container .quiz-index-elements .icons div a ion-icon {
+  font-size: 3rem;
+}
+.quiz-container .quiz-index-elements .icons div a:hover {
+  color: #292929;
+}
+.quiz-container .quiz-index-elements .icons div a ion-icon {
+  margin-right: 0.3rem;
+}
+.quiz-container .quiz-index-elements .icons div a .html5 {
+  color: #e34c26;
+}
+.quiz-container .quiz-index-elements .icons div a .css3 {
+  color: #264de4;
+}
+.quiz-container .quiz-index-elements .icons div a .js {
+  color: #f0db4f;
+}
+.quiz-container .quiz-index-elements .icons div a .sass {
+  color: #a020f0;
+}
+.quiz-container .quiz-index-elements .icons div a .react {
+  color: #61dbfb;
+}
+.quiz-container .quiz-index-elements .icons div a .vue {
+  color: #42b883;
+}
+.quiz-container .quiz-index-elements .icons .index-element-1 {
+  margin-right: 1rem;
+}
+.quiz-container .quiz-index-elements .icons .index-element-2 {
+  margin-left: 1rem;
+}
+
+/* html quiz container
+ */
+.html-quiz-container {
+  height: 60rem;
+  width: 60rem;
+  min-height: 60vh;
+  margin-top: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.quiz-header {
+  border: 1px solid red;
+  position: relative;
+}
+.quiz-header .quiz-header-banner {
+  height: 20rem;
+  width: 100%;
+}
+.quiz-header .quiz-header-banner img {
+  height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quiz-header .timeCount {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+.quiz-header .timeCount .timeLeft {
+  color: yellow;
+  background-color: #292929;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+.quiz-header .timeCount .seconds {
+  color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #292929;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  margin: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-section {
+  border: 1px solid red;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.quiz-section .quiz-title {
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 0;
+  border: 1px solid red;
+}
+.quiz-section .quiz-options {
+  border: 1px solid red;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.quiz-section .quiz-options .options {
+  margin-bottom: 1.2rem;
+  border: 1px solid #292929;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.quiz-section .quiz-options .options ion-icon {
+  color: red;
+  float: right;
+  border: 1px solid yellow;
+  margin-left: 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  border-top: 2px solid rgba(40, 40, 40, 0.168627451);
+  margin-bottom: 0;
+}
+footer .total-quiz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid red;
+}
+footer .total-quiz p {
+  font-size: 1.1rem;
+}
+footer .total-quiz .nextBtn {
+  border: 1px solid red;
+  padding: 1rem 2.5rem;
+  background-color: #a044d9;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+/* html quiz container
+ *//*# sourceMappingURL=quizApp.css.map */
