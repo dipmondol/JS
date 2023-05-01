@@ -188,9 +188,10 @@ body {
     }
   }
   .time-lines {
-    background: #081f7aa7;
-    height: 0.3rem;
+    background: #020c34a7;
+    height: 0.4rem;
     margin-bottom: 3rem;
+    // width: 100%;
   }
 }
 .quiz-section {
@@ -288,9 +289,105 @@ footer {
       border-radius: 0.5rem;
       color: #fff;
       cursor: pointer;
+      display: none;
     }
   }
 }
 
 /* html quiz container
  */
+
+/* =======Quiz result========= */
+
+.html-quiz-result-container {
+  height: 65rem;
+  width: 60rem;
+  min-height: 70vh;
+  margin-top: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+
+  .result-header-banner {
+    height: 30rem;
+    width: 100%;
+    border-bottom: none;
+
+    a {
+      position: relative;
+
+      ion-icon {
+        position: absolute;
+        top: -18rem;
+        left: 1rem;
+        font-size: 2.5rem;
+        color: #fff;
+      }
+    }
+    img {
+      height: 35rem;
+      width: 100%;
+      object-fit: contain;
+      border: none;
+    }
+
+    // img {
+    //   height: 20rem;
+    //   width: 100%;
+    //   object-fit: cover;
+    //   // border-bottom: 2px solid #2828282b;
+    // }
+  }
+
+  .quiz-result-section {
+    border: 1px solid rgb(250, 29, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    margin-top: 5rem;
+    .result-content {
+      border: 1px solid rgb(93, 225, 93);
+
+      .text {
+        border: 1px solid red;
+        margin-bottom: 2rem;
+
+        h1 {
+          margin-bottom: 2rem;
+          color: #272727;
+          padding: 1rem 0;
+        }
+        p {
+          font-size: 1.8rem;
+          text-align: center;
+
+          span {
+            color: rgb(248, 33, 33);
+          }
+        }
+      }
+      .quiz-buttons {
+        border: 1px solid yellow;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        .reloadBtn {
+          border: 1px solid blue;
+          padding: 1rem 3rem;
+          cursor: pointer;
+          border-radius: 0.5rem;
+        }
+        .quitBtn {
+          border: 1px solid rgb(24, 159, 189);
+          padding: 1rem 3rem;
+          cursor: pointer;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* =======Quiz result========= */
