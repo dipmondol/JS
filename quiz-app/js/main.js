@@ -1,10 +1,16 @@
 const nextBtn = document.querySelector(".nextBtn");
+
 const timeLine = document.querySelector(".time-lines");
+const result_box = document.querySelector(".html-quiz-result-container");
+const restart_quiz = document.querySelector(".reloadBtn");
+const quit_quiz = document.querySelector(".quit Btn");
+
 let que_count = 0;
 let counter;
 let timeValue = 15;
 let counterLine;
 let widthValue = 0;
+let userScore = 0;
 
 showQuestions(0);
 startTimer(timeValue);
@@ -61,6 +67,9 @@ function optionSelected(answer) {
   let allOptions = option_list.children.length;
 
   if (userAns === correctAns) {
+    userScore += 1;
+    console.log(userScore);
+
     answer.classList.add("correct");
     console.log("Answer Is correct");
     answer.insertAdjacentHTML("beforeend", tickIcon);
@@ -97,8 +106,27 @@ nextBtn.onclick = () => {
     nextBtn.style.display = "none";
   } else {
     console.log("You have completed your task");
+    showResultBox();
   }
 };
+
+function showResultBox() {
+  const QuizBox = document.querySelector(".html-quiz-container");
+  const Questions = document.querySelector(".quiz-options");
+
+  result_box.classList.add("activeResult");
+
+  const scoreText = document.querySelector(".score_text");
+  if (userScore > 3) {
+    let scoreTag =
+      "<span>Congratulations You Got <p>" +
+      userScore +
+      "</p> Out Of <p>" +
+      questions.length +
+      "</p></span>";
+    scoreText.innerHTML = scoreTag;
+  }
+}
 
 function startTimer(time) {
   const timeCount = document.querySelector(".seconds");

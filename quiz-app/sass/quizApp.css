@@ -115,6 +115,12 @@ body {
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
+.html-quiz-container .activeInfo {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
 
 .quiz-header {
   position: relative;
@@ -203,6 +209,12 @@ body {
   font-size: 1.5rem;
   color: #272727;
 }
+.quiz-section .quiz-options .activeQuiz {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
 .quiz-section .quiz-options .options {
   margin-bottom: 1.2rem;
   background: aliceblue;
@@ -269,11 +281,18 @@ footer .total-quiz .nextBtn {
  */
 /* =======Quiz result========= */
 .html-quiz-result-container {
-  height: 65rem;
+  height: 66rem;
   width: 60rem;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: 50%;
   min-height: 70vh;
-  margin-top: 5rem;
+  transition: all 0.2s ease;
+  opacity: 0;
   border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.9);
+  pointer-events: none;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
 .html-quiz-result-container .result-header-banner {
@@ -311,19 +330,21 @@ footer .total-quiz .nextBtn {
 }
 .html-quiz-result-container .quiz-result-section .result-content .text {
   border: 1px solid red;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .html-quiz-result-container .quiz-result-section .result-content .text h1 {
-  margin-bottom: 2rem;
   color: #272727;
   padding: 1rem 0;
 }
-.html-quiz-result-container .quiz-result-section .result-content .text p {
-  font-size: 1.8rem;
-  text-align: center;
+.html-quiz-result-container .quiz-result-section .result-content .score_text span {
+  display: flex;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
 }
-.html-quiz-result-container .quiz-result-section .result-content .text p span {
-  color: rgb(248, 33, 33);
+.html-quiz-result-container .quiz-result-section .result-content .score_text span p {
+  padding: 0 4px;
+  font-weight: 600;
 }
 .html-quiz-result-container .quiz-result-section .result-content .quiz-buttons {
   border: 1px solid yellow;
@@ -336,13 +357,32 @@ footer .total-quiz .nextBtn {
   border: 1px solid blue;
   padding: 1rem 3rem;
   cursor: pointer;
+  background: #0c5a9f;
+  color: #fff;
   border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+.html-quiz-result-container .quiz-result-section .result-content .quiz-buttons .reloadBtn:hover {
+  background: #004085;
 }
 .html-quiz-result-container .quiz-result-section .result-content .quiz-buttons .quitBtn {
   border: 1px solid rgb(24, 159, 189);
-  padding: 1rem 3rem;
+  background: #0c5a9f;
+  color: #fff;
+  padding: 1rem 3.7rem;
   cursor: pointer;
   border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+.html-quiz-result-container .quiz-result-section .result-content .quiz-buttons .quitBtn:hover {
+  background: #004085;
+}
+
+.html-quiz-result-container.activeResult {
+  z-index: 5;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
 }
 
 /* =======Quiz result========= *//*# sourceMappingURL=quizApp.css.map */
