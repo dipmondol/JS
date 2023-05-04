@@ -202,7 +202,7 @@ body {
   }
 }
 .quiz-section {
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 34rem;
   width: 30rem;
   display: flex;
@@ -216,17 +216,17 @@ body {
     font-size: 1.8rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     color: #292929;
   }
   .quiz-title {
     font-size: 1.8rem;
     padding: 1rem 1rem 1rem 0;
-    border: 1px solid red;
+    // border: 1px solid red;
     color: #292929;
   }
   .quiz-options {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 1rem;
     font-size: 1.5rem;
     color: #272727;
@@ -250,7 +250,7 @@ body {
       &:hover {
         color: #004085;
         background: #cce5ff;
-        border: 1px solid #b8daff;
+        // border: 1px solid #b8daff;
       }
 
       span {
@@ -267,12 +267,12 @@ body {
     .options.correct {
       color: #155724;
       background: #d4edda;
-      border: 1px solid #c3e6cb;
+      // border: 1px solid #c3e6cb;
     }
     .options.incorrect {
       color: #721c24;
       background: #f8d7da;
-      border: 1px solid #f5c6cb;
+      // border: 1px solid #f5c6cb;
     }
     .options.disabled {
       pointer-events: none;
@@ -289,14 +289,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     p {
       font-size: 1.2rem;
       color: #272727;
     }
     .nextBtn {
-      border: 1px solid red;
+      // border: 1px solid red;
       padding: 1rem 2.5rem;
       background-color: #a044d9;
       border-radius: 0.5rem;
@@ -360,17 +360,17 @@ footer {
   }
 
   .quiz-result-section {
-    border: 1px solid rgb(250, 29, 88);
+    // border: 1px solid rgb(250, 29, 88);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20rem;
     margin-top: 5rem;
     .result-content {
-      border: 1px solid rgb(93, 225, 93);
+      // border: 1px solid rgb(93, 225, 93);
 
       .text {
-        border: 1px solid red;
+        // border: 1px solid red;
         margin-bottom: 1rem;
 
         h1 {
@@ -392,14 +392,14 @@ footer {
       }
 
       .quiz-buttons {
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         display: flex;
         justify-content: space-around;
         padding: 1rem;
         font-size: 1.5rem;
 
         .reloadBtn {
-          border: 1px solid blue;
+          // border: 1px solid blue;
           padding: 1rem 3rem;
           cursor: pointer;
           background: #0c5a9f;
@@ -411,7 +411,7 @@ footer {
           }
         }
         .quitBtn {
-          border: 1px solid rgb(24, 159, 189);
+          // border: 1px solid rgb(24, 159, 189);
           background: #0c5a9f;
           color: #fff;
           padding: 1rem 3.7rem;

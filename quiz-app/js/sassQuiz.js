@@ -30,26 +30,26 @@ function showQuestions(index) {
 
   let option_tag =
     '<div class="options">' +
-    questions[index].options[0] +
+    sassQuestions[index].options[0] +
     "</div>" +
     ' <div class="options">' +
-    questions[index].options[1] +
+    sassQuestions[index].options[1] +
     "</div>" +
     '<div class="options">' +
-    questions[index].options[2] +
+    sassQuestions[index].options[2] +
     "</div>" +
     '<div class="options">' +
-    questions[index].options[3] +
+    sassQuestions[index].options[3] +
     "</div>";
 
   let que_tag =
     "<span>" +
-    questions[index].num +
+    sassQuestions[index].num +
     "." +
-    questions[index].question +
+    sassQuestions[index].question +
     "</span>";
 
-  let total_queTag = "<p>" + questions[index].num + " of 5 Questions</p>";
+  let total_queTag = "<p>" + sassQuestions[index].num + " of 5 Questions</p>";
 
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
@@ -69,7 +69,7 @@ function optionSelected(answer) {
   clearInterval(counter);
   clearInterval(counterLine);
   let userAns = answer.textContent;
-  let correctAns = questions[que_count].answer;
+  let correctAns = sassQuestions[que_count].answer;
   const option_list = document.querySelector(".quiz-options");
   let allOptions = option_list.children.length;
 
@@ -102,7 +102,7 @@ function optionSelected(answer) {
 }
 
 nextBtn.onclick = () => {
-  if (que_count < questions.length - 1) {
+  if (que_count < sassQuestions.length - 1) {
     que_count++;
     showQuestions(que_count);
     clearInterval(counter);
@@ -129,7 +129,7 @@ function showResultBox() {
       "<span>Congratulations You Got <p>" +
       userScore +
       "</p> Out Of <p>" +
-      questions.length +
+      sassQuestions.length +
       "</p></span>";
     scoreText.innerHTML = scoreTag;
   } else if (userScore > 1) {
@@ -137,7 +137,7 @@ function showResultBox() {
       "<span>Carry On You Got <p>" +
       userScore +
       "</p> Out Of <p>" +
-      questions.length +
+      sassQuestions.length +
       "</p></span>";
     scoreText.innerHTML = scoreTag;
   } else {
@@ -145,7 +145,7 @@ function showResultBox() {
       "<span>Sorry You Got <p>" +
       userScore +
       "</p> Out Of <p>" +
-      questions.length +
+      sassQuestions.length +
       "</p></span>";
     scoreText.innerHTML = scoreTag;
   }
