@@ -1,0 +1,82 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.todo-container {
+  margin: 0 auto;
+  height: 80rem;
+  width: 60rem;
+  max-height: 80vh;
+  margin-top: 5rem;
+  border-radius: 5px;
+  background: #0d1b2a;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+.todo-container .todo_header {
+  border-bottom: 1.5px solid #1b263b;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+}
+.todo-container .todo_header h2 {
+  color: #415a77;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+.todo-container .todo_add {
+  border: 1px solid red;
+  height: 5rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.todo-container .todo_add .todo_add_box {
+  height: 4rem;
+  width: 70%;
+  background: #1b263b;
+  border-radius: 5px;
+}
+.todo-container .todo_add .todo_add_box form {
+  border: 1px solid red;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+.todo-container .todo_add .todo_add_box form input {
+  background: none;
+  color: #415a77;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.todo-container .todo_add .todo_add_btn {
+  height: 4rem;
+  width: 10%;
+  display: grid;
+  place-items: center;
+  background: #1b263b;
+  border-radius: 5px;
+}
+.todo-container .todo_add .todo_add_btn ion-icon {
+  font-size: 2rem;
+  color: #415a77;
+}/*# sourceMappingURL=to-dolist.css.map */
